@@ -8,7 +8,7 @@ export const OrganizationSetup: React.FC<SetupProps> = ({ onComplete }) => {
   const [companyName, setCompanyName] = useState('');
   const [companyUrl, setCompanyUrl] = useState('');
   const [companyDescription, setCompanyDescription] = useState('');
-  const [scrapingProgress, setScrapingProgress] = useState<ScrapingProgress>({
+  const [scrapingProgress] = useState<ScrapingProgress>({
     total: 8,
     scraped: 3,
     pending: 5
